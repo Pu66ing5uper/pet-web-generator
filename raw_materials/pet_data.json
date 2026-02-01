@@ -1,0 +1,11 @@
+{
+  "petName": "测试小狗",
+  "idleAnimation": "idle.mp4",
+  "interactions": [
+    {
+      "action": "摸头",
+      "animation": "feedback.mp4",
+      "triggerButtonText": "摸摸头"
+    }
+  ]
+}
