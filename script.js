@@ -37,6 +37,17 @@ async function init() {
     statusHint.textContent = `${petData.petName}正在待机，可以互动了！`;
     console.log('初始化完成。');
 }
+// 可选但推荐：在初始化函数 init() 末尾添加
+videoPlayer.addEventListener('pause', function(event) {
+    // 如果视频被暂停（无论是程序还是用户意外操作），立即重新播放
+    console.log('视频被暂停，尝试重新播放...');
+    this.play().catch(e => console.warn('重新播放失败:', e));
+});
+
+// 阻止视频元素的右键菜单，防止用户调出播放器控件
+videoPlayer.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
 
 // 示例：从URL获取数据（你需要让C同学提供这个URL）
 async function fetchDataFromUrl(url) {
