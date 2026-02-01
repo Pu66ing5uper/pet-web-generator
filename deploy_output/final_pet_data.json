@@ -1,0 +1,11 @@
+{
+  "petName": "测试小狗",
+  "idleAnimation": "https://qingzhouyiguowanchong-1401241131.cos.ap-beijing.myqcloud.com/pets/idle.mp4",
+  "interactions": [
+    {
+      "action": "摸头",
+      "animation": "https://qingzhouyiguowanchong-1401241131.cos.ap-beijing.myqcloud.com/pets/feedback.mp4",
+      "triggerButtonText": "摸摸头"
+    }
+  ]
+}
